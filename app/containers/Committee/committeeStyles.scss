@@ -1,0 +1,227 @@
+.committeePage {
+  > h1 {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: -30px;
+    font-size: 36px;
+    font-weight: 900;
+    color: #620512;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .carousel {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .sliderimg {
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    height: 72vh;
+    filter: brightness(85%);
+    margin-bottom: -5px;
+  }
+
+  p.title {
+    color: white;
+    text-align: center;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 0px;
+    padding-bottom: 28.5vh;
+  }
+
+  #Image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.4);
+  }
+  .president {
+    margin: 140px auto 0px auto;
+  }
+  #Name {
+    margin-top: 20px;
+    text-align: center;
+    color: #620512;
+    font-size: 20px;
+  }
+
+  .role {
+    margin-top: -10px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .grid-item {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px 185px 65px 185px;
+  }
+
+  .item-container {
+    width: 15vw;
+    min-width: 180px;
+    min-height: 260px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* buat ipad */
+@media screen and (max-width: 1124px) {
+  .committeePage {
+    .grid-container {
+      grid-template-columns: auto auto auto;
+      padding-left: 130px;
+      padding-right: 130px;
+    }
+
+    .item-container {
+      width: 170px;
+      height: 250px;
+    }
+
+    #Name {
+      font-size: 18px;
+    }
+
+    .role {
+      font-size: 14px;
+    }
+  }
+}
+
+/* buat ipad yg lebih kecil */
+@media screen and (max-width: 800px) {
+  .committeePage {
+    .grid-container {
+      grid-template-columns: auto auto;
+      padding-left: 70px;
+      padding-right: 70px;
+    }
+
+    .item-container {
+      width: 160px;
+      height: 240px;
+      min-width: unset;
+      min-height: unset;
+    }
+
+    p.title {
+      font-size: 30px;
+    }
+
+    #Name {
+      font-size: 16px;
+    }
+
+    .role {
+      font-size: 12px;
+    }
+  }
+}
+
+/* buat mobile phone */
+@media screen and (max-width: 480px) {
+  .committeePage {
+    > h1 {
+      font-weight: 900;
+      font-size: 24px;
+      margin-top: 100px;
+      margin-bottom: -70px;
+    }
+    .sliderimg {
+      height: 400px;
+    }
+
+    p.title {
+      padding-bottom: 143px;
+    }
+
+    .grid-container {
+      padding: 0 30px 10px 30px;
+    }
+    .item-container {
+      width: 140px;
+      height: 240px;
+      min-width: unset;
+      min-height: unset;
+    }
+
+    .grid-item {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    #Name {
+      font-size: 14px;
+    }
+
+    .president {
+      margin-bottom: -10px;
+    }
+
+    .role {
+      font-size: 11px;
+    }
+  }
+}
+
+/* buat orang yg hape nya super mungil */
+@media screen and (max-width: 350px) {
+  .committeePage {
+    .sliderimg {
+      height: 400px;
+    }
+
+    p.title {
+      padding-bottom: 140px;
+    }
+
+    .item-container {
+      width: 120px;
+      height: 210px;
+      min-width: unset;
+      min-height: unset;
+    }
+
+    p.title {
+      font-size: 25px;
+    }
+
+    .grid-item {
+      padding: 0 5px 0 5px;
+    }
+
+    .president {
+      padding: 0 5px 0 5px;
+    }
+
+    #Name {
+      font-size: 13px;
+    }
+
+    .role {
+      font-size: 10px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-item {
+    transition: transform 0.6s ease-in-out;
+  }
+}

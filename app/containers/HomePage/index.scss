@@ -1,0 +1,258 @@
+.homepage {
+  .TitlePosition {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    padding: 0 50px 0 50px;
+    height: 70vh;
+    border-radius: 100%/25%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: #ffffff;
+  }
+
+  .Arrow {
+    display: flex;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-self: center;
+    margin-top: 13vh;
+    cursor: pointer;
+    margin-bottom: -60px;
+  }
+
+  .Arrow span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 2.5px solid #ffffff;
+    border-right: 2.5px solid #ffffff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+  }
+  .Arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+  }
+  .Arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+  }
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(20px, 20px);
+    }
+  }
+
+  .AboutUs {
+    margin: 40px 0 40px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 6vw 5vh 5vw 5vh;
+  }
+
+  .AboutUsPhoto {
+    margin-top: 15px;
+    border-radius: 15px;
+    width: 40vw;
+    height: auto;
+  }
+
+  .AboutUsText {
+    font-weight: 400;
+    margin-inline-start: 12%;
+    margin-inline-end: 12%;
+    line-height: 25px;
+    padding: 3vw 3vh;
+  }
+
+  .VisionandMission {
+    width: 100%;
+  }
+
+  .VisionandMissionPhoto {
+    border-radius: 15px;
+    width: 35vw;
+    min-width: 150px;
+    margin-bottom: 50px;
+    height: auto;
+  }
+
+  .OurVisionandMission {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f7eaea;
+    padding: 33px;
+  }
+
+  .OurVisionandMissionTitle {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 5vh;
+    font-size: 36px;
+    color: #620512;
+  }
+
+  .OurVisionandMissionBody {
+    padding-left: 9%;
+    padding-right: 9%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+  }
+
+  .OurVisionandMissionBody ul {
+    text-align: justify !important;
+  }
+
+  .AdHoc {
+    padding: 50px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 24px;
+    color: #620512;
+    line-height: 1.2;
+  }
+
+  .Website {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+  }
+
+  .WebsiteBox {
+    margin: 30px;
+    width: 342px;
+    height: 457px;
+    background: #ffffff;
+    border: 2px solid rgb(90, 89, 89);
+    box-sizing: border-box;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    transition-duration: 0.5s;
+
+  }
+
+  .WebsitePicture {
+    width: 245px;
+    height: 245px;
+    margin: auto;
+    margin-top: 5vh;
+    border: 0;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .WebsiteLogo {
+    margin-top: 4vh;
+  }
+
+  .WebsiteBox:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+  }
+
+  .OurVisionandMissionBody ul {
+    list-style-type: disc;
+    text-align: left;
+    font-size: 20px;
+    font-weight: normal;
+    padding-inline-start: 5vw;
+    padding-inline-end: 5vh;
+  }
+
+  .OurVisionandMissionBody li {
+    margin-bottom: 20px;
+  }
+
+  .wave1 {
+    margin-bottom: -6%;
+    width: 100%;
+  }
+
+  .wave2 {
+    margin-top: -13%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .homepage {
+    .OurVisionandMission {
+      padding-top: 30px;
+      padding-bottom: 10px;
+    }
+
+    .VisionandMissionPhoto {
+      margin-bottom: 20px;
+      width: 70vw;
+    }
+
+    .OurVisionandMissionBody ul {
+      padding-inline-start: 2vw;
+      padding-inline-end: 2vw;
+    }
+
+    .Website {
+      margin-top: 5vh;
+    }
+
+    .WebsiteBox {
+      border: 1px solid rgb(90, 89, 89);
+      box-shadow: 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.25);
+    }
+
+    .AdHoc {
+      margin-bottom: 50px;
+      padding-top: 20px;
+    }
+
+    .TitlePosition {
+      height: 450px;
+      padding-top: 30px;
+    }
+
+    .Arrow {
+      margin-top: 10px;
+    }
+
+    .AboutUs {
+      margin-bottom: 0;
+    }
+
+    .AboutUsText {
+      line-height: 18px;
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+
+    .AboutUsPhoto {
+      width: 70vw;
+    }
+  }
+}

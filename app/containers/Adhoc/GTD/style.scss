@@ -1,0 +1,54 @@
+.gtd {
+  .social-media {
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .fab,
+  .fas {
+    font-size: 33px;
+    color: #2e2925;
+    //color: #6b1c16;
+  }
+
+  .fab:hover,
+  .fas:hover {
+    //color: #2e2925;
+    color: #6b1c16;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gtd {
+    strong {
+      font-size: 24px !important;
+    }
+
+    p {
+      font-size: 14px !important;
+      width: 100% !important;
+    }
+
+    .social-media {
+      width: 110px;
+    }
+
+    .description-text {
+      text-align: justify !important;
+    }
+
+    .fab,
+    .fas {
+      font-size: 28px;
+    }
+    .header {
+      height: 400px !important;
+    }
+
+    .header-logo {
+      width: 170px !important;
+    }
+  }
+}
