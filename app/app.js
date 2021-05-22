@@ -27,7 +27,7 @@ import 'file-loader?name=.htaccess!./.htaccess';
 
 import configureStore from './configureStore';
 
-// import bootstrap from the installed npm package
+// import react-bootstrap from the installed npm package
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Create redux store with history

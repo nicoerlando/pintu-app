@@ -3,8 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
   html,
   body {
-    height: 100%;
-    width: 100%;
+    margin: 0;
   }
 
   body {
@@ -15,10 +14,11 @@ const GlobalStyle = createGlobalStyle`
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
-  #app {
+  .app {
     background-color: #ffffff;
-    min-height: 100%;
-    min-width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
   }
 
   p,

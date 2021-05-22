@@ -2,13 +2,14 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 
 // import components
+// import { StyledContainer } from './Styles';
 import { Button } from '../../components/button';
 import { Container } from '../../components/container';
 
-export default function HomePage() {
+export default function CarouselPage() {
   return (
     <Container>
-      <Button>Home Page</Button>
+      <Button>Carousel Page</Button>
     </Container>
   );
 }

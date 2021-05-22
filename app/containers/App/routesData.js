@@ -9,31 +9,21 @@ const data = [
   },
   {
     id: 2,
-    path: '/committee',
+    path: '/carousel',
     exact: true,
-    component: lazy(() => import('containers/Committee')),
+    component: lazy(() => import('containers/CarouselPage')),
   },
   {
-    id: 3,
-    path: '/events',
+    id: 1,
+    path: '/card',
     exact: true,
-    component: lazy(() => import('containers/Events')),
+    component: lazy(() => import('containers/CardPage')),
   },
   {
-    id: 4,
-    path: '/contact-us',
+    id: 1,
+    path: '/login',
     exact: true,
-    component: lazy(() => import('containers/ContactUs')),
-  },
-  {
-    id: 5,
-    path: '/adhoc',
-    component: lazy(() => import('containers/Adhoc')),
-  },
-  {
-    id: 6,
-    path: '/guide',
-    component: lazy(() => import('containers/Guide')),
+    component: lazy(() => import('containers/LoginPage')),
   },
 ];
 

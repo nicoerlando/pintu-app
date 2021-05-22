@@ -5,10 +5,10 @@ import React from 'react';
 import { Button } from '../../components/button';
 import { Container } from '../../components/container';
 
-export default function HomePage() {
+export default function LoginPage() {
   return (
     <Container>
-      <Button>Home Page</Button>
+      <Button>Login Page</Button>
     </Container>
   );
 }
